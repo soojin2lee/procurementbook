@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.Date;
 
 // @FeignClient(name="bookManagement", url="http://bookManagement:8080")
-public interface BookManagementService {
+// public interface BookManagementService {
 
-    @RequestMapping(method= RequestMethod.POST, path="/bookManagements")
-    public void bookRegistration(@RequestBody BookManagement bookManagement);
+//     @RequestMapping(method= RequestMethod.POST, path="/bookManagements")
+//     public void bookRegistration(@RequestBody BookManagement bookManagement);
 
-}
+// }
