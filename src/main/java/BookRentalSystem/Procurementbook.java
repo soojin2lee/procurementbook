@@ -26,10 +26,10 @@ public class Procurementbook {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-        BookRentalSystem.external.BookManagement bookManagement = new BookRentalSystem.external.BookManagement();
+  //      BookRentalSystem.external.BookManagement bookManagement = new BookRentalSystem.external.BookManagement();
         // mappings goes here
-        ProcurementbookApplication.applicationContext.getBean(BookRentalSystem.external.BookManagementService.class)
-            .bookRegistration(bookManagement);
+  //      ProcurementbookApplication.applicationContext.getBean(BookRentalSystem.external.BookManagementService.class)
+  //         .bookRegistration(bookManagement);
 
 
     }
