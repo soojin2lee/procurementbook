@@ -17,11 +17,11 @@ public class Procurementbook {
     private Date regdate;
     private String qty;
 
-    @PostPersist
-    public void onPostPersist(){
-        Bookbought bookbought = new Bookbought();
-        BeanUtils.copyProperties(this, bookbought);
-        bookbought.publishAfterCommit();
+//    @PostPersist
+//    public void onPostPersist(){
+//        Bookbought bookbought = new Bookbought();
+ //       BeanUtils.copyProperties(this, bookbought);
+//        bookbought.publishAfterCommit();
 
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
@@ -32,7 +32,7 @@ public class Procurementbook {
   //         .bookRegistration(bookManagement);
 
 
-    }
+//    }
 
 
     public Long getId() {
